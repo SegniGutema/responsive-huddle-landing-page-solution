@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap");
+:root {
+  --Pink: hsl(322, 100%, 66%);
+  --Very-Pale-Cyan: hsl(193, 100%, 96%);
+  --Very-Dark-Cyan: hsl(192, 100%, 9%);
+  --Grayish-Blue: hsl(208, 11%, 55%);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--Very-Pale-Cyan);
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  background-color: white;
+  width: 100%;
+}
+
+.header-section {
+  width: 100%;
+  display: grid;
+  gap: 3rem;
+  background: var(--Very-Pale-Cyan) url("./images/bg-hero-mobile.svg");
+  padding-bottom: 3rem;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  margin: 1rem auto;
+}
+header img {
+  width: 6rem;
+}
+header button {
+  width: 5.5rem;
+  height: 1.5rem;
+  border-radius: 2rem;
+  background-color: white;
+  border: none;
+  box-shadow: 0 0 5px rgb(163, 157, 157);
+  font-weight: 700;
+  font-size: 0.7rem;
+}
+
+.header-section-body {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  gap: 2rem;
+  margin-inline: auto;
+}
+.header-section-body img {
+  width: min(90%, 500px);
+  display: block;
+  margin-inline: auto;
+}
+.header-section-body-content {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+.header-section-body-content p {
+  max-width: 400px;
+  margin-inline: auto;
+}
+h1,
+p,
+h2 {
+  text-align: center;
+}
+.card-content p {
+  display: block;
+  max-width: 400px;
+  margin-inline: auto;
+  font-size: 1.5rem;
+}
+.header-section-body-content h1 {
+  font-size: 1.3rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+.header-section-body-content > p {
+  font-size: 14px;
+  line-height: 1.5rem;
+}
+.header-section-body-button {
+  width: 200px;
+  height: 2.5rem;
+  border-radius: 2rem;
+  background-color: var(--Pink);
+  border: none;
+  color: white;
+  font-weight: 700;
+  margin-inline: auto;
+}
+#section-2 {
+  background-color: white;
+  padding: 3rem auto;
+  width: 100%;
+  position: relative;
+  padding-bottom: 250px;
+  margin-top: 5rem;
+}
+.cards {
+  display: grid;
+  gap: 3rem;
+  width: 90%;
+  margin-inline: auto;
+}
+.cards > div {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 5rem 1.2rem;
+  gap: 3rem;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgb(233, 228, 228);
+}
+.cards > div img {
+  width: min(90%, 500px);
+  display: block;
+  margin-inline: auto;
+}
+.cards > div h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+.cards p {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  opacity: 50%;
+}
+.card-content {
+  display: grid;
+  gap: 1.5rem;
+}
+.outer-card {
+  padding: 2rem 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgb(148, 146, 146);
+  display: grid;
+  gap: 1rem;
+  place-items: center;
+  position: absolute;
+  bottom: -80px;
+  width: min(90%, 700px);
+  z-index: 999;
+  background-color: white;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+}
+.outer-card h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 7s00;
+  font-size: 0.9rem;
+}
+.outer-card button {
+  width: 170px;
+  height: 2.5rem;
+  border-radius: 2rem;
+  background-color: var(--Pink);
+  border: none;
+  color: white;
+  font-weight: 700;
+  line-height: 3px;
+  font-size: 0.7rem;
+}
+footer {
+  background-color: var(--Very-Dark-Cyan);
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 13px;
+  padding: 10rem 1rem 2rem 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+footer p {
+  text-align: unset;
+}
+footer .logo {
+  filter: invert(100%);
+}
+.logo-and-addresses {
+  display: grid;
+  gap: 2rem;
+}
+address {
+  display: grid;
+  gap: 1.3rem;
+}
+address > div {
+  display: grid;
+  grid-template-columns: min-content auto;
+  gap: 1.2rem;
+  width: 100%;
+  font-style: normal;
+}
+address p {
+  max-width: 400px;
+}
+.navs {
+  display: grid;
+  gap: 1.2rem;
+}
+.social-icons-and-copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+.Copyright p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 0.68rem;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+button:hover {
+  opacity: 70%;
+  cursor: pointer;
+}
+@media (min-width: 950px) {
+  .header-section {
+    background: var(--Very-Pale-Cyan) url("./images/bg-hero-desktop.svg");
+    gap: unset;
+  }
+  header {
+    padding: 2rem 3rem 2rem;
+  }
+
+  header button {
+    width: 170px;
+    height: 2.5rem;
+  }
+  header img {
+    height: 1.7rem;
+    width: 150px;
+  }
+  .header-section-body {
+    grid-template-columns: 45% 55%;
+    padding-inline: 3rem;
+  }
+  .header-section-body-content {
+    gap: 2rem;
+  }
+  .header-section-body-content h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.7rem;
+    text-align: left;
+    max-width: 400px;
+  }
+  .header-section-body-content p {
+    font-size: 1rem;
+    text-align: left;
+    margin-inline: 0;
+  }
+  .header-section-body-content button {
+    height: 3rem;
+    width: 60%;
+    font-size: 1rem;
+    margin-left: 0;
+  }
+  .cards {
+    width: 80%;
+  }
+  .cards > div {
+    display: flex;
+    flex-direction: row;
+
+    gap: 5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 7px rgb(219, 218, 218);
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 2rem 3rem 5rem;
+  }
+
+  .cards > div:nth-of-type(2) {
+    flex-direction: row-reverse;
+  }
+  .cards > div > img {
+    width: min(90%, 500px);
+  }
+  .card-content > p {
+    text-align: left;
+  }
+  .card-content > h2 {
+    text-align: left;
+    font-size: 1.5rem;
+  }
+  .outer-card {
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 2rem;
+    bottom: -7rem;
+  }
+  .outer-card h2 {
+    font-size: 1.5rem;
+  }
+  .outer-card button {
+    width: 50%;
+    height: 4rem;
+    border-radius: 2rem;
+    line-height: 3px;
+    font-size: 1rem;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 3rem;
+    padding: 10rem 5rem 5rem;
+  }
+  .navs {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+  }
+  .social-icons-and-copyright {
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 8rem;
+  }
+  .Copyright {
+    margin-bottom: -4rem;
+  }
+}
